@@ -8,7 +8,7 @@ const Card = (props) => {
       <p>{props.date}</p>
       <p>{props.time}</p>
       <p>{props.number}</p>
-      <button>Cancel</button>
+      <button onClick={() => {props.removeReservation(props.id)}}>Cancel</button>
     </article>
   )
 } 
