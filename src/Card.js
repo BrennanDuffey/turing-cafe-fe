@@ -2,7 +2,6 @@ import React from 'react';
 
 const Card = (props) => {
 
-console.log(props)
   return (
     <article>
       <h3>{props.name}</h3>
