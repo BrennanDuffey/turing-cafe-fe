@@ -1,10 +1,12 @@
 import React from 'react';
-import Card from './Card'
+import Card from './Card';
+import './CardContainer.css';
+
 
 const CardContainer = ({reservations, removeReservation}) => {
   const reservationCards = reservations.map(reservation => (<Card {...reservation} key={reservation.id} removeReservation={removeReservation} />))
   return (
-    <section>
+    <section className='card-container'>
       {reservationCards}
     </section>
   )
